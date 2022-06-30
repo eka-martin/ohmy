@@ -1,0 +1,81 @@
+header {
+    @include flexCenter(column);
+
+    .logo {
+        width: 180px;
+        height: 60px;
+        @include flexCenter(column);
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+
+        }
+    }
+}
+
+.location {
+    background-color: $greyMed;
+    @include flexCenter(row);
+    box-shadow: 0px 4px 3px rgb(212, 212, 212) inset;
+    padding: 15px;
+
+    i {
+        padding-right: 20px;
+    }
+}
+
+.search {
+    background-color: $greyLight;
+    @include flexCenter(column);
+    height: 300px;
+    padding: 50px;
+    margin-bottom: 40px;
+
+    .heading {
+        @include title();
+        text-align: center;
+
+    }
+
+    .heading_2 {
+        @include heading_2();
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+}
+
+.heading {
+    @include title();
+}
+
+.btn-pink {
+    @include btn-pink();
+    position: relative;
+    z-index: 1;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: lighten($secondColor, 10%);
+        border-radius: 36px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
+
+    &:hover {
+
+        & .btn-pink__bg {
+            opacity: 0.4;
+        }
+
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.53),
+        0 4px 10px 0 rgba(0, 0, 0, 0.53);
+
+    }
+}

@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+@mixin title() {
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@mixin text-base($font-weight) {
+    font-size: 16px;
+    font-weight: $font-weight;
+}
+
+@mixin big_title() {
+    font-family: Shrikhand;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+@mixin heading_2() {
+    font-size: 16px;
+    font-weight: 300;
+
+}

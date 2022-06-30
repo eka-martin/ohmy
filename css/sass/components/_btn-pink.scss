@@ -1,0 +1,9 @@
+@mixin btn-pink() {
+    background-image: $gradient;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px 15px 20px;
+    border-radius: 36px;
+    box-shadow: $shadow;
+    width: 220px;
+    text-align: center;
+}

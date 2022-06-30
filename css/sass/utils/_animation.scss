@@ -1,0 +1,143 @@
+.fa-heart:hover,
+.fa-heart:focus,
+.fa-heart:active {
+    font-weight: 900;
+    -webkit-background-clip: text;
+    background-image: $gradient;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    animation: 2s ease-in-out fontgradient;
+    -webkit-animation: fontgradient 2s ease-in-out;
+    -moz-animation: fontgradient 2s ease-in-out;
+
+}
+
+
+
+
+@-webkit-keyframes fontgradient {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@-moz-keyframes fontgradient {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@keyframes fontgradient {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+
+
+.plat:hover {
+    &>.food {
+        width: 250px;
+        transition: width 600ms;
+
+        &>.food_1 p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 200px;
+
+            &>.food_1 span {
+
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 200px;
+            }
+
+
+        }
+    }
+
+
+
+    &>.box {
+
+        transform: scaleX(1);
+
+        &>i {
+
+            transform: rotate(360deg);
+        }
+
+
+    }
+
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 40px, 0)
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.fonc .etape {
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: lighten($primColor, 35%);
+
+    }
+
+    &:hover i {
+        color: $primColor;
+    }
+
+}
